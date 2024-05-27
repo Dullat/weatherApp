@@ -2,4 +2,4 @@
 
 weather
 
-[app](https://dullat.github.io/weatherApp/dist/src/index.html)
+[app](https://dullat.github.io/weatherApp/dist/index.html)
