@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(199, 123, 25);
+    color: black;
+}
+
+.wrapper {
+    background-color: rgb(207, 114, 114);
+}
+
+header {
+    padding-inline: 2rem;
+    background-color: white;
+
+    gap: 2rem;
+
+    .nav {
+        margin-left: auto;
+        gap: 1rem;
+    }
+
+    .toggle-btn {
+        height: 50px;
+    }
+}
+
+main {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        padding-top: 4rem;
+        padding-inline: 4rem;
+
+        .left {
+            display: grid;
+            gap: 1rem;
+
+            .weather-img {
+                height: 200px;
+                aspect-ratio: 1;
+                background: url(../images/cloudysunny.png);
+                background-size: cover;
+                background-position: center;
+            }
+
+            .text-content {
+                display: grid;
+                gap: 1rem;
+
+                .country {
+                    font-size: 3rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+
+                .date-time {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(192, 86, 86, 0.767);
+            border-radius: 2rem;
+
+
+            ul {
+                height: 100%;
+                padding: 2rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                justify-content: space-around;
+
+                li {
+                    display: flex;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                    }
+                }
+            }
+
+            .thermo-meter-container {
+                display: grid;
+                place-content: center;
+
+                .meter {
+                    .outer-pipe {
+                        position: relative;
+                        background-color: rgb(39, 39, 39);
+                        height: 300px;
+                        width: 40px;
+                        border-radius: 5rem;
+                        padding: .7rem;
+
+                        .inner-pipe {
+                            background-color: rgb(107, 106, 58);
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 5rem;
+                            position: relative;
+
+                            .most-inner-pipe {
+                                position: absolute;
+                                bottom: 0;
+                                height: 49%;
+                                width: 100%;
+                                background-color: rgb(216, 93, 72);
+                            }
+
+                            ul {
+                                position: absolute;
+                                right: 150%;
+                                display: flex;
+                                flex-direction: column;
+                                height: 100%;
+                                width: 70px;
+                                justify-content: space-between;
+
+                            }
+                        }
+
+                        .outer-circle {
+                            position: absolute;
+                            bottom: 0px;
+                            right: 0px;
+                            transform: translateX(20%);
+                            background-color: rgb(39, 39, 39);
+                            height: 70px;
+                            aspect-ratio: 1;
+                            border-radius: 100vh;
+                            padding: .7rem;
+
+                            .inner-circle {
+                                position: relative;
+                                z-index: 999;
+                                height: 100%;
+                                aspect-ratio: 1;
+                                background-color: rgb(216, 93, 72);
+                                border-radius: 100vh;
+                                display: grid;
+                                place-content: center;
+
+                                span {
+                                    font-size: 1.4rem;
+                                    font-weight: 600;
+                                    color: rgb(39, 39, 39);
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+// utility
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    height: 50px;
+}
