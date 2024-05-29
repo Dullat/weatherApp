@@ -41,8 +41,8 @@ async function getWeather(location) {
       throw new Error(errorMessage);
     } else {
       const data = await response.json();
-      console.log(data);
-      console.log(createObject(data));
+      // console.log(data);
+      // console.log(createObject(data));
       return createObject(data);
     }
   } catch (error) {
