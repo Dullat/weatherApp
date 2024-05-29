@@ -14,6 +14,8 @@ const celsius = document.querySelector('.celsius');
 const humidity = document.querySelector('.humidity');
 const windSpeed = document.querySelector('.wind-speed');
 const thermometer = document.querySelector('.thermo-meter-temp');
+const feelslikeC = document.querySelector('.feels-like-c');
+const feelslikeF = document.querySelector('.feels-like-f');
 const thermometerMercuryLvl = document.querySelector('.most-inner-pipe');
 
 function setDateTime(value) {
@@ -42,6 +44,8 @@ function setData(data) {
   thermometer.textContent = `${data.temp_c}`;
   thermometerMercuryLvl.style.height = `${data.temp_c}%`;
   weatherImg.style.backgroundImage = `url(${data.icon})`;
+  feelslikeC.textContent = data.feelslike_c;
+  feelslikeF.textContent = data.feelslike_f;
 }
 
 async function featchWeather(value) {
