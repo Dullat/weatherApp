@@ -15,16 +15,31 @@ header {
     background-color: rgba(209, 209, 209, 0.432);
     backdrop-filter: blur(20px);
     border-radius: 0 0 1.2rem 1.2rem;
+    height: 50px;
 
     gap: 2rem;
 
     .nav {
         margin-left: auto;
         gap: 1rem;
+
+        @media screen and(max-width: 450px) {
+            display: none;
+        }
     }
 
     .toggle-btn {
-        height: 50px;
+        height: 40px;
+        display: none;
+        margin-left: auto;
+
+        svg {
+            height: 40px;
+        }
+
+        @media screen and(max-width: 450px) {
+            display: block;
+        }
     }
 }
 
@@ -44,6 +59,10 @@ main {
         background-color: rgba(192, 86, 86, 0.767);
         border-radius: 1.5rem;
         margin-top: 2rem;
+
+        @media screen and(max-width: 450px) {
+            width: 90%;
+        }
 
         .icon {
             height: 40px;
@@ -106,7 +125,7 @@ main {
             gap: 1rem;
 
             @media screen and(max-width: 850px) {
-                padding-inline: 3rem;
+                padding-inline: .7rem;
             }
 
             .weather-img {
@@ -148,6 +167,10 @@ main {
             @media screen and(max-width: 850px) {
                 padding-top: 3rem;
                 padding-bottom: 3rem;
+            }
+
+            @media screen and(max-width: 450px) {
+                grid-template-columns: 1.5fr 1fr;
             }
 
 
@@ -248,7 +271,7 @@ main {
                                 place-content: center;
 
                                 span {
-                                    font-size: .9rem;
+                                    font-size: .9em;
                                     font-weight: 600;
                                     color: rgb(39, 39, 39);
                                 }

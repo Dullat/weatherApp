@@ -39,7 +39,7 @@ function setData(data) {
   celsius.textContent = `\u00B0F ${data.temp_f}`;
   humidity.textContent = `Humidity: ${data.humidity}`;
   windSpeed.textContent = `kph: ${data.wind_kph} / mph: ${data.wind_mph}`;
-  thermometer.textContent = `${data.temp_c}C`;
+  thermometer.textContent = `${data.temp_c}`;
   thermometerMercuryLvl.style.height = `${data.temp_c}%`;
   weatherImg.style.backgroundImage = `url(${data.icon})`;
 }
