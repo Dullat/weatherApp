@@ -90,162 +90,201 @@ header {
   header .toggle-btn {
     height: 50px; }
 
-main .search-bar {
-  margin: auto;
-  width: 500px;
+main {
   display: flex;
-  align-items: center;
-  position: relative;
-  padding: .5rem;
-  padding-inline: 1rem;
-  background-color: rgba(192, 86, 86, 0.767);
-  border-radius: 1.5rem;
-  margin-top: 2rem; }
-  main .search-bar .icon {
-    height: 40px; }
-    main .search-bar .icon > svg {
-      height: 40px; }
-  main .search-bar input {
-    width: 100%;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    line-height: 1.3rem;
-    font-size: 1.3rem;
-    font-family: poppins; }
-  main .search-bar button {
-    background-color: #cf7272;
-    color: #000;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin-left: 1rem;
-    font-family: poppins;
-    font-weight: 600;
-    font-size: 1.1rem; }
-    main .search-bar button p {
-      transform: rotate(-10deg); }
-
-main .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 2rem;
-  padding-top: 4rem;
-  padding-inline: 4rem; }
-  main .hero .left {
-    display: grid;
-    gap: 1rem; }
-    main .hero .left .weather-img {
-      height: 200px;
-      aspect-ratio: 1;
-      background: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
-      background-size: cover;
-      background-position: center; }
-    main .hero .left .text-content {
-      display: grid;
-      gap: 1rem; }
-      main .hero .left .text-content .country {
-        font-size: 3rem;
-        font-weight: 600;
-        margin-bottom: 1rem; }
-      main .hero .left .text-content .date-time {
-        font-size: 1.2rem;
-        font-weight: 600; }
-  main .hero .right {
+  flex-direction: column; }
+  main .search-bar {
+    margin: auto;
+    min-width: 260px;
+    width: 70%;
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(192, 86, 86, 0.767);
-    border-radius: 2rem; }
-    main .hero .right ul {
-      height: 100%;
-      padding: 2rem;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-      justify-content: space-around; }
-      main .hero .right ul li {
-        display: flex; }
-        main .hero .right ul li div {
-          display: flex;
-          align-items: center;
-          gap: 1rem; }
-    main .hero .right .thermo-meter-container {
-      display: grid;
-      place-content: center; }
-      main .hero .right .thermo-meter-container .meter .outer-pipe {
-        position: relative;
-        background-color: #272727;
-        height: 300px;
-        width: 40px;
-        border-radius: 5rem;
-        padding: .7rem; }
-        main .hero .right .thermo-meter-container .meter .outer-pipe .inner-pipe {
-          background-color: #6b6a3a;
-          height: 100%;
-          width: 100%;
-          border-radius: 5rem;
-          position: relative; }
-          main .hero .right .thermo-meter-container .meter .outer-pipe .inner-pipe .most-inner-pipe {
-            position: absolute;
-            bottom: 0;
-            height: 49%;
-            width: 100%;
-            background-color: #d85d48; }
-          main .hero .right .thermo-meter-container .meter .outer-pipe .inner-pipe ul {
-            position: absolute;
-            right: 150%;
-            top: -10%;
-            display: flex;
-            flex-direction: column;
-            height: 120%;
-            width: 70px;
-            justify-content: space-between; }
-        main .hero .right .thermo-meter-container .meter .outer-pipe .outer-circle {
-          position: absolute;
-          bottom: -20px;
-          right: 0px;
-          transform: translateX(20%);
-          background-color: #272727;
-          height: 70px;
-          aspect-ratio: 1;
-          border-radius: 100vh;
-          padding: .7rem; }
-          main .hero .right .thermo-meter-container .meter .outer-pipe .outer-circle .inner-circle {
-            position: relative;
-            z-index: 999;
-            height: 100%;
-            aspect-ratio: 1;
-            background-color: #d85d48;
-            border-radius: 100vh;
-            display: grid;
-            place-content: center; }
-            main .hero .right .thermo-meter-container .meter .outer-pipe .outer-circle .inner-circle span {
-              font-size: 1.4rem;
-              font-weight: 600;
-              color: #272727; }
-
-main .week-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
-  justify-content: space-around; }
-  main .week-section .day-card {
-    min-width: 170px;
+    align-items: center;
+    position: relative;
+    padding: .5rem;
+    padding-inline: 1rem;
     background-color: rgba(192, 86, 86, 0.767);
     border-radius: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem; }
-    main .week-section .day-card > P {
-      font-size: 1.2rem;
+    margin-top: 2rem; }
+    main .search-bar .icon {
+      height: 40px; }
+      main .search-bar .icon > svg {
+        height: 40px; }
+    main .search-bar input {
+      width: 100%;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      line-height: 1.3rem;
+      font-size: 1.3rem;
+      font-family: poppins; }
+    main .search-bar button {
+      background-color: #cf7272;
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      margin-left: 1rem;
+      font-family: poppins;
       font-weight: 600;
-      opacity: .7; }
-      main .week-section .day-card > P .temprature {
+      font-size: 1.1rem; }
+      main .search-bar button p {
+        transform: rotate(-10deg); }
+  main .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-inline: 4rem; }
+    @media screen and (max-width: 850px) {
+      main .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem; } }
+    @media screen and (max-width: 735px) {
+      main .hero {
+        padding: 1.3rem; } }
+    @media screen and (max-width: 400px) {
+      main .hero {
+        padding: .7rem; } }
+    main .hero .left {
+      display: grid;
+      gap: 1rem; }
+      @media screen and (max-width: 850px) {
+        main .hero .left {
+          padding-inline: 3rem; } }
+      main .hero .left .weather-img {
+        height: 200px;
+        aspect-ratio: 1;
+        background: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+        background-size: cover;
+        background-position: center; }
+      main .hero .left .text-content {
+        display: grid;
+        gap: 1rem; }
+        main .hero .left .text-content .condition {
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 1rem; }
+        main .hero .left .text-content .country {
+          font-size: 1.2rem;
+          font-weight: 600; }
+        main .hero .left .text-content .date-time {
+          font-size: 1.2rem;
+          font-weight: 600; }
+    main .hero .right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: rgba(192, 86, 86, 0.767);
+      border-radius: 2rem; }
+      @media screen and (max-width: 850px) {
+        main .hero .right {
+          padding-top: 3rem;
+          padding-bottom: 3rem; } }
+      main .hero .right ul {
+        height: 100%;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        justify-content: space-around; }
+        @media screen and (max-width: 735px) {
+          main .hero .right ul {
+            padding: .5rem;
+            padding-left: 1rem; } }
+        main .hero .right ul li {
+          display: flex; }
+          main .hero .right ul li div {
+            display: flex;
+            align-items: center;
+            gap: 1rem; }
+      main .hero .right .thermo-meter-container {
+        display: grid;
+        place-content: center;
+        font-size: 1rem; }
+        @media screen and (max-width: 735px) {
+          main .hero .right .thermo-meter-container {
+            font-size: .8rem; } }
+        @media screen and (max-width: 450px) {
+          main .hero .right .thermo-meter-container {
+            font-size: .7rem; } }
+        main .hero .right .thermo-meter-container .meter .outer-pipe {
+          position: relative;
+          background-color: #272727;
+          height: 18.75em;
+          width: 2.5em;
+          border-radius: 5em;
+          padding: .7em; }
+          main .hero .right .thermo-meter-container .meter .outer-pipe .inner-pipe {
+            background-color: #6b6a3a;
+            height: 100%;
+            width: 100%;
+            border-radius: 5rem;
+            position: relative; }
+            main .hero .right .thermo-meter-container .meter .outer-pipe .inner-pipe .most-inner-pipe {
+              position: absolute;
+              bottom: 0;
+              height: 49%;
+              width: 100%;
+              background-color: #d85d48; }
+            main .hero .right .thermo-meter-container .meter .outer-pipe .inner-pipe ul {
+              position: absolute;
+              right: 150%;
+              top: -10%;
+              display: flex;
+              flex-direction: column;
+              height: 120%;
+              width: 4.375em;
+              justify-content: space-between; }
+          main .hero .right .thermo-meter-container .meter .outer-pipe .outer-circle {
+            position: absolute;
+            bottom: -20px;
+            right: 0px;
+            transform: translateX(20%);
+            background-color: #272727;
+            height: 4.375em;
+            aspect-ratio: 1;
+            border-radius: 100vh;
+            padding: .7rem; }
+            main .hero .right .thermo-meter-container .meter .outer-pipe .outer-circle .inner-circle {
+              position: relative;
+              z-index: 999;
+              height: 100%;
+              aspect-ratio: 1;
+              background-color: #d85d48;
+              border-radius: 100vh;
+              display: grid;
+              place-content: center; }
+              main .hero .right .thermo-meter-container .meter .outer-pipe .outer-circle .inner-circle span {
+                font-size: .9rem;
+                font-weight: 600;
+                color: #272727; }
+  main .extra-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: space-around;
+    margin-top: 2rem; }
+    @media screen and (max-width: 735px) {
+      main .extra-details {
+        padding: 1rem; } }
+    main .extra-details .card {
+      min-width: 300px;
+      max-width: 700px;
+      width: 100%;
+      background-color: rgba(192, 86, 86, 0.767);
+      border-radius: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem; }
+      main .extra-details .card div {
+        font-size: 1.3rem;
+        font-weight: 600;
+        opacity: .5; }
+      main .extra-details .card > P {
+        font-size: 1.2rem;
         font-weight: 600; }
 
 .flex {
@@ -254,7 +293,7 @@ main .week-section {
 
 svg {
   height: 50px; }
-`, "",{"version":3,"sources":["webpack://./src/scss/style.scss"],"names":[],"mappings":"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","sourcesContent":["body {\r\n    // background-color: rgb(199, 123, 25);\r\n    background-color: rgb(207, 114, 114);\r\n    color: black;\r\n}\r\n\r\n.wrapper {\r\n    background-color: rgb(207, 114, 114);\r\n    max-width: 1600px;\r\n    margin: auto;\r\n}\r\n\r\nheader {\r\n    padding-inline: 2rem;\r\n    background-color: rgba(209, 209, 209, 0.432);\r\n    backdrop-filter: blur(20px);\r\n    border-radius: 0 0 1.2rem 1.2rem;\r\n\r\n    gap: 2rem;\r\n\r\n    .nav {\r\n        margin-left: auto;\r\n        gap: 1rem;\r\n    }\r\n\r\n    .toggle-btn {\r\n        height: 50px;\r\n    }\r\n}\r\n\r\nmain {\r\n    .search-bar {\r\n        margin: auto;\r\n        width: 500px;\r\n        display: flex;\r\n        align-items: center;\r\n        position: relative;\r\n        padding: .5rem;\r\n        padding-inline: 1rem;\r\n        background-color: rgba(192, 86, 86, 0.767);\r\n        border-radius: 1.5rem;\r\n        margin-top: 2rem;\r\n\r\n        .icon {\r\n            height: 40px;\r\n\r\n            >svg {\r\n                height: 40px;\r\n            }\r\n        }\r\n\r\n        input {\r\n            width: 100%;\r\n            background-color: transparent;\r\n            outline: none;\r\n            border: none;\r\n            line-height: 1.3rem;\r\n            font-size: 1.3rem;\r\n            font-family: poppins;\r\n        }\r\n\r\n        button {\r\n            background-color: rgb(207, 114, 114);\r\n            color: #000;\r\n            border: none;\r\n            padding: 0.5rem 1rem;\r\n            border-radius: 0.5rem;\r\n            cursor: pointer;\r\n            margin-left: 1rem;\r\n            font-family: poppins;\r\n            font-weight: 600;\r\n            font-size: 1.1rem;\r\n\r\n            p {\r\n                transform: rotate(-10deg);\r\n            }\r\n        }\r\n    }\r\n\r\n    .hero {\r\n        display: grid;\r\n        grid-template-columns: 1fr 1fr;\r\n        padding: 2rem;\r\n        padding-top: 4rem;\r\n        padding-inline: 4rem;\r\n\r\n        .left {\r\n            display: grid;\r\n            gap: 1rem;\r\n\r\n            .weather-img {\r\n                height: 200px;\r\n                aspect-ratio: 1;\r\n                background: url(../images/cloudysunny.png);\r\n                background-size: cover;\r\n                background-position: center;\r\n            }\r\n\r\n            .text-content {\r\n                display: grid;\r\n                gap: 1rem;\r\n\r\n                .country {\r\n                    font-size: 3rem;\r\n                    font-weight: 600;\r\n                    margin-bottom: 1rem;\r\n                }\r\n\r\n                .date-time {\r\n                    font-size: 1.2rem;\r\n                    font-weight: 600;\r\n                }\r\n            }\r\n        }\r\n\r\n        .right {\r\n            display: flex;\r\n            justify-content: space-around;\r\n            background-color: rgba(192, 86, 86, 0.767);\r\n            border-radius: 2rem;\r\n\r\n\r\n            ul {\r\n                height: 100%;\r\n                padding: 2rem;\r\n                flex-direction: column;\r\n                align-items: flex-start;\r\n                gap: 1rem;\r\n                justify-content: space-around;\r\n\r\n                li {\r\n                    display: flex;\r\n\r\n                    div {\r\n                        display: flex;\r\n                        align-items: center;\r\n                        gap: 1rem;\r\n                    }\r\n                }\r\n            }\r\n\r\n            .thermo-meter-container {\r\n                display: grid;\r\n                place-content: center;\r\n\r\n                .meter {\r\n                    .outer-pipe {\r\n                        position: relative;\r\n                        background-color: rgb(39, 39, 39);\r\n                        height: 300px;\r\n                        width: 40px;\r\n                        border-radius: 5rem;\r\n                        padding: .7rem;\r\n\r\n                        .inner-pipe {\r\n                            background-color: rgb(107, 106, 58);\r\n                            height: 100%;\r\n                            width: 100%;\r\n                            border-radius: 5rem;\r\n                            position: relative;\r\n\r\n                            .most-inner-pipe {\r\n                                position: absolute;\r\n                                bottom: 0;\r\n                                height: 49%;\r\n                                width: 100%;\r\n                                background-color: rgb(216, 93, 72);\r\n                            }\r\n\r\n                            ul {\r\n                                position: absolute;\r\n                                right: 150%;\r\n                                top: -10%;\r\n                                display: flex;\r\n                                flex-direction: column;\r\n                                height: 120%;\r\n                                width: 70px;\r\n                                justify-content: space-between;\r\n\r\n                            }\r\n                        }\r\n\r\n                        .outer-circle {\r\n                            position: absolute;\r\n                            bottom: -20px;\r\n                            right: 0px;\r\n                            transform: translateX(20%);\r\n                            background-color: rgb(39, 39, 39);\r\n                            height: 70px;\r\n                            aspect-ratio: 1;\r\n                            border-radius: 100vh;\r\n                            padding: .7rem;\r\n\r\n                            .inner-circle {\r\n                                position: relative;\r\n                                z-index: 999;\r\n                                height: 100%;\r\n                                aspect-ratio: 1;\r\n                                background-color: rgb(216, 93, 72);\r\n                                border-radius: 100vh;\r\n                                display: grid;\r\n                                place-content: center;\r\n\r\n                                span {\r\n                                    font-size: 1.4rem;\r\n                                    font-weight: 600;\r\n                                    color: rgb(39, 39, 39);\r\n                                }\r\n                            }\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n\r\n            }\r\n\r\n        }\r\n    }\r\n\r\n    .week-section {\r\n        display: flex;\r\n        flex-wrap: wrap;\r\n        gap: 2rem;\r\n        padding: 2rem;\r\n        justify-content: space-around;\r\n\r\n        .day-card {\r\n            min-width: 170px;\r\n            background-color: rgba(192, 86, 86, 0.767);\r\n            border-radius: 1.5rem;\r\n            cursor: pointer;\r\n\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n            padding: 1rem;\r\n            gap: 1rem;\r\n\r\n            >P {\r\n                font-size: 1.2rem;\r\n                font-weight: 600;\r\n                opacity: .7;\r\n\r\n                .temprature {\r\n                    font-weight: 600;\r\n                }\r\n            }\r\n\r\n        }\r\n    }\r\n\r\n}\r\n\r\n\r\n// utility\r\n\r\n.flex {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\nsvg {\r\n    height: 50px;\r\n}"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/scss/style.scss"],"names":[],"mappings":"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","sourcesContent":["body {\r\n    // background-color: rgb(199, 123, 25);\r\n    background-color: rgb(207, 114, 114);\r\n    color: black;\r\n}\r\n\r\n.wrapper {\r\n    background-color: rgb(207, 114, 114);\r\n    max-width: 1600px;\r\n    margin: auto;\r\n}\r\n\r\nheader {\r\n    padding-inline: 2rem;\r\n    background-color: rgba(209, 209, 209, 0.432);\r\n    backdrop-filter: blur(20px);\r\n    border-radius: 0 0 1.2rem 1.2rem;\r\n\r\n    gap: 2rem;\r\n\r\n    .nav {\r\n        margin-left: auto;\r\n        gap: 1rem;\r\n    }\r\n\r\n    .toggle-btn {\r\n        height: 50px;\r\n    }\r\n}\r\n\r\nmain {\r\n    display: flex;\r\n    flex-direction: column;\r\n\r\n    .search-bar {\r\n        margin: auto;\r\n        min-width: 260px;\r\n        width: 70%;\r\n        display: flex;\r\n        align-items: center;\r\n        position: relative;\r\n        padding: .5rem;\r\n        padding-inline: 1rem;\r\n        background-color: rgba(192, 86, 86, 0.767);\r\n        border-radius: 1.5rem;\r\n        margin-top: 2rem;\r\n\r\n        .icon {\r\n            height: 40px;\r\n\r\n            >svg {\r\n                height: 40px;\r\n            }\r\n        }\r\n\r\n        input {\r\n            width: 100%;\r\n            background-color: transparent;\r\n            outline: none;\r\n            border: none;\r\n            line-height: 1.3rem;\r\n            font-size: 1.3rem;\r\n            font-family: poppins;\r\n        }\r\n\r\n        button {\r\n            background-color: rgb(207, 114, 114);\r\n            color: #000;\r\n            border: none;\r\n            padding: 0.5rem 1rem;\r\n            border-radius: 0.5rem;\r\n            cursor: pointer;\r\n            margin-left: 1rem;\r\n            font-family: poppins;\r\n            font-weight: 600;\r\n            font-size: 1.1rem;\r\n\r\n            p {\r\n                transform: rotate(-10deg);\r\n            }\r\n        }\r\n    }\r\n\r\n    .hero {\r\n        display: grid;\r\n        grid-template-columns: 1fr 1fr;\r\n        padding: 2rem;\r\n        padding-top: 4rem;\r\n        padding-inline: 4rem;\r\n\r\n        @media screen and(max-width: 850px) {\r\n            grid-template-columns: 1fr;\r\n            gap: 2rem;\r\n        }\r\n\r\n        @media screen and(max-width: 735px) {\r\n            padding: 1.3rem;\r\n        }\r\n\r\n        @media screen and(max-width: 400px) {\r\n            padding: .7rem;\r\n        }\r\n\r\n        .left {\r\n            display: grid;\r\n            gap: 1rem;\r\n\r\n            @media screen and(max-width: 850px) {\r\n                padding-inline: 3rem;\r\n            }\r\n\r\n            .weather-img {\r\n                height: 200px;\r\n                aspect-ratio: 1;\r\n                background: url(../images/cloudysunny.png);\r\n                background-size: cover;\r\n                background-position: center;\r\n            }\r\n\r\n            .text-content {\r\n                display: grid;\r\n                gap: 1rem;\r\n\r\n                .condition {\r\n                    font-size: 2.5rem;\r\n                    font-weight: 600;\r\n                    margin-bottom: 1rem;\r\n                }\r\n\r\n                .country {\r\n                    font-size: 1.2rem;\r\n                    font-weight: 600;\r\n                }\r\n\r\n                .date-time {\r\n                    font-size: 1.2rem;\r\n                    font-weight: 600;\r\n                }\r\n            }\r\n        }\r\n\r\n        .right {\r\n            display: grid;\r\n            grid-template-columns: 1fr 1fr;\r\n            background-color: rgba(192, 86, 86, 0.767);\r\n            border-radius: 2rem;\r\n\r\n            @media screen and(max-width: 850px) {\r\n                padding-top: 3rem;\r\n                padding-bottom: 3rem;\r\n            }\r\n\r\n\r\n            ul {\r\n                height: 100%;\r\n                padding: 2rem;\r\n                flex-direction: column;\r\n                align-items: flex-start;\r\n                gap: 1rem;\r\n                justify-content: space-around;\r\n\r\n                @media screen and(max-width: 735px) {\r\n                    padding: .5rem;\r\n                    padding-left: 1rem;\r\n                }\r\n\r\n                li {\r\n                    display: flex;\r\n\r\n                    div {\r\n                        display: flex;\r\n                        align-items: center;\r\n                        gap: 1rem;\r\n                    }\r\n                }\r\n            }\r\n\r\n            .thermo-meter-container {\r\n                display: grid;\r\n                place-content: center;\r\n\r\n                font-size: 1rem;\r\n\r\n                @media screen and(max-width: 735px) {\r\n                    font-size: .8rem;\r\n                }\r\n\r\n                @media screen and(max-width: 450px) {\r\n                    font-size: .7rem;\r\n                }\r\n\r\n                .meter {\r\n                    .outer-pipe {\r\n                        position: relative;\r\n                        background-color: rgb(39, 39, 39);\r\n                        height: 18.75em;\r\n                        width: 2.5em;\r\n                        border-radius: 5em;\r\n                        padding: .7em;\r\n\r\n                        .inner-pipe {\r\n                            background-color: rgb(107, 106, 58);\r\n                            height: 100%;\r\n                            width: 100%;\r\n                            border-radius: 5rem;\r\n                            position: relative;\r\n\r\n                            .most-inner-pipe {\r\n                                position: absolute;\r\n                                bottom: 0;\r\n                                height: 49%;\r\n                                width: 100%;\r\n                                background-color: rgb(216, 93, 72);\r\n                            }\r\n\r\n                            ul {\r\n                                position: absolute;\r\n                                right: 150%;\r\n                                top: -10%;\r\n                                display: flex;\r\n                                flex-direction: column;\r\n                                height: 120%;\r\n                                width: 4.375em;\r\n                                justify-content: space-between;\r\n\r\n                            }\r\n                        }\r\n\r\n                        .outer-circle {\r\n                            position: absolute;\r\n                            bottom: -20px;\r\n                            right: 0px;\r\n                            transform: translateX(20%);\r\n                            background-color: rgb(39, 39, 39);\r\n                            height: 4.375em;\r\n                            aspect-ratio: 1;\r\n                            border-radius: 100vh;\r\n                            padding: .7rem;\r\n\r\n                            .inner-circle {\r\n                                position: relative;\r\n                                z-index: 999;\r\n                                height: 100%;\r\n                                aspect-ratio: 1;\r\n                                background-color: rgb(216, 93, 72);\r\n                                border-radius: 100vh;\r\n                                display: grid;\r\n                                place-content: center;\r\n\r\n                                span {\r\n                                    font-size: .9rem;\r\n                                    font-weight: 600;\r\n                                    color: rgb(39, 39, 39);\r\n                                }\r\n                            }\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n\r\n            }\r\n\r\n        }\r\n    }\r\n\r\n    .extra-details {\r\n        display: flex;\r\n        flex-wrap: wrap;\r\n        gap: 2rem;\r\n        padding: 2rem;\r\n        justify-content: space-around;\r\n        margin-top: 2rem;\r\n\r\n        @media screen and(max-width: 735px) {\r\n            padding: 1rem;\r\n        }\r\n\r\n        .card {\r\n            min-width: 300px;\r\n            max-width: 700px;\r\n            width: 100%;\r\n            background-color: rgba(192, 86, 86, 0.767);\r\n            border-radius: 1.5rem;\r\n\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n            padding: 1rem;\r\n            gap: 1rem;\r\n\r\n            div {\r\n                font-size: 1.3rem;\r\n                font-weight: 600;\r\n                opacity: .5;\r\n            }\r\n\r\n            >P {\r\n                font-size: 1.2rem;\r\n                font-weight: 600;\r\n            }\r\n\r\n        }\r\n    }\r\n\r\n}\r\n\r\n\r\n// utility\r\n\r\n.flex {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\nsvg {\r\n    height: 50px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -846,8 +885,8 @@ async function getWeather(location) {
       throw new Error(errorMessage);
     } else {
       const data = await response.json();
-      console.log(data);
-      console.log(createObject(data));
+      // console.log(data);
+      // console.log(createObject(data));
       return createObject(data);
     }
   } catch (error) {
@@ -1025,43 +1064,51 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const searchBtn = document.querySelector('.search-btn');
+const weatherImg = document.querySelector('.weather-img');
 const input = document.querySelector('.search');
 const form = document.querySelector('form');
 const country = document.querySelector('.country');
 const dateTime = document.querySelector('.date-time');
-const message = document.querySelector('.message');
-const condition = document.querySelector('.weather-condition');
+const condition = document.querySelector('.condition');
+const fahrenheit = document.querySelector('.fahrenheit');
+const celsius = document.querySelector('.celsius');
 const humidity = document.querySelector('.humidity');
 const windSpeed = document.querySelector('.wind-speed');
-// const airQuality = document.querySelector('.air-quality');
 const thermometer = document.querySelector('.thermo-meter-temp');
 const thermometerMercuryLvl = document.querySelector('.most-inner-pipe');
+
+function setDateTime(value) {
+  const data = new Date(value);
+  return `${data.getDay()}.${data.getDate()}.${data.getFullYear()} / ${data.getHours()}:${data.getMinutes()}`;
+}
 
 function loading() {
   country.textContent = '....';
   dateTime.textContent = '....';
-  message.textContent = '....';
   condition.textContent = '....';
+  fahrenheit.textContent = '....';
+  celsius.textContent = '....';
   humidity.textContent = '....';
   windSpeed.textContent = '....';
 }
 
 function setData(data) {
-  country.textContent = data.country;
-  dateTime.textContent = data.time;
-  message.textContent = '....';
-  condition.textContent = `Condition: ${data.text}`;
+  country.textContent = `${data.name}, ${data.region} (${data.country})`;
+  dateTime.textContent = setDateTime(data.time);
+  condition.textContent = `${data.text}`;
+  fahrenheit.textContent = `\u00B0C ${data.temp_c}`;
+  celsius.textContent = `\u00B0F ${data.temp_f}`;
   humidity.textContent = `Humidity: ${data.humidity}`;
   windSpeed.textContent = `kph: ${data.wind_kph} / mph: ${data.wind_mph}`;
   thermometer.textContent = `${data.temp_c}C`;
   thermometerMercuryLvl.style.height = `${data.temp_c}%`;
+  weatherImg.style.backgroundImage = `url(${data.icon})`;
 }
 
 async function featchWeather(value) {
   try {
     loading();
-    console.log('here');
+    // console.log('here');
     await new Promise((resolve) => {
       setTimeout(() => resolve(), 1000);
     });
@@ -1072,7 +1119,7 @@ async function featchWeather(value) {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  console.log('working');
+  // console.log('working');
   featchWeather(input.value);
 });
 
@@ -1080,4 +1127,4 @@ form.addEventListener('submit', (e) => {
 
 /******/ })()
 ;
-//# sourceMappingURL=maine1e86696a62a977c496e.bundle.js.map
+//# sourceMappingURL=mainc0a39592ec58a96a732f.bundle.js.map
